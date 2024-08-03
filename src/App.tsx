@@ -42,7 +42,7 @@ function App() {
 
         if (keySequence.join('') === targetSequence) {
             console.log('Furry sequence detected!');
-            document.location.href = 'https://ny64.kr';
+            document.location.href = 'https://ny64.kr?from=imnyang_root_page';
         }
     };
 
