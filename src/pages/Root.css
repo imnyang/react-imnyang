@@ -14,3 +14,7 @@
   z-index: 9;
 }
 
+.profile {
+  width: 256px;
+  background-color: transparent;
+}
