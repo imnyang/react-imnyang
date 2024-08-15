@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -39,7 +38,6 @@ const events = [
     { date: '2021-05-19', description: '소프트웨어와 전자신문이 주관한 소프트웨어재단 꿈찾기 캠프 이수', dotColor: 'success' },
     { date: '2018-01-27', description: '제4회 맑은하늘 맑은웃음 어린이 문예공모전에서 위닉스상(2위) 수여', dotColor: 'success' },
 ];
-
 export default function Timeline_Page() {
     return (
         <div style={{ display: 'flex', overflow: 'auto', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: 'white', width: '100vw', height: '100vh', background: '#101020' }}>
@@ -53,7 +51,7 @@ export default function Timeline_Page() {
                                 {event.date}
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" color={event.dotColor} />
+                                <TimelineDot variant="outlined" color={event.dotColor as "success" | "grey" | "secondary" | "inherit" | "primary" | "error" | "info" | "warning"} />
                                 {index < events.length - 1 && <TimelineConnector />}
                             </TimelineSeparator>
                             <TimelineContent>
