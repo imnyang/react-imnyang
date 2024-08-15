@@ -1,5 +1,5 @@
 import Root from './pages/Root';
-import Timeline from './pages/Timeline';
+import Timeline from './pages/Timeline_Page';
 import { Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 
