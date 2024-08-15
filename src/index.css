@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #101010;
+  background-color: #41444B;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,10 +30,13 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+  background-color: #101010;
 }
 
 h1 {

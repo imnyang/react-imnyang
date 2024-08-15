@@ -1,20 +1,39 @@
-
-
 .App {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #41444B;
+  color: black;
+}
 
-  text-align: center;
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  width: 45%;
+  height: 100%;
+  background-color: #DFC7D4;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  background-color: #101010;
-  z-index: 9;
 }
 
-.profile {
-  width: 256px;
-  background-color: transparent;
+.right {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #41444B;
 }

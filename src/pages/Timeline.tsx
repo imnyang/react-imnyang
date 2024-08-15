@@ -1,5 +1,4 @@
 import Markdown from "react-markdown";
-import Help from '../component/help';
 import './Timeline.css';
 import markdown from './Timeline.md';
 
