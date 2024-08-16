@@ -8,6 +8,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 const events = [
+    { date: '2024-08-05', description: '29회 해킹캠프 선발', link: 'https://hackingcamp.org/', dotColor: 'success' },
     { date: '2024-08-01', description: '글로벌 스타트업 학교 베트남 해외 연수 데모데이 대상 (1위)', link: 'http://ncf.or.kr', dotColor: 'success' },
     { date: '2024-05-16', description: '글로벌 스타트업 학교 2기 합격', link: 'http://ncf.or.kr', dotColor: 'success' },
     { date: '2024-05-11', description: 'LG AI 청소년 캠프 1기 LG 탐색상 수상', link: 'https://lgaiyouthcamp.or.kr/', dotColor: 'success' },
