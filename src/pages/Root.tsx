@@ -58,6 +58,7 @@ function Root() {
           </div>
           <div style={{display: 'flex', flexDirection: 'row', gap: 25}}>
             <a href='https://instagram.com/isangjeong.today'>🥕 isangjeong.today</a>
+            <a href='https://github.com/imnyang/FakeAlyac'>💊 FakeAlyac</a>
             <a hidden href='https://qloat.com'>🗨️ Qloat</a>
           </div>
         </div>

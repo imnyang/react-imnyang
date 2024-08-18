@@ -19,7 +19,12 @@ function App() {
       }
       if (keySequence.join('') === targetSequence) {
         console.log('Furry sequence detected!');
-        document.location.href = 'https://ny64.kr?from=imnyang_root_page';
+        const random = Math.random();
+        if (random < 0.1) {
+          document.location.href = 'https://wh64.net?from=imnyang_root_page';
+        } else {
+          document.location.href = 'https://ny64.kr?from=imnyang_root_page';
+        }
       }
     };
   
@@ -29,7 +34,7 @@ function App() {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
- 
+
   return (
     <>
       <Routes>
