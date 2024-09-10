@@ -15,12 +15,22 @@ function Root() {
       setImageSrc('https://f.imnyang.xyz/profile/imnyang.webp');
       setGotoHref('/?kawaii');
     }
+    if (queryParams.has('no_hair') && queryParams.has("no_ear")) {
+      setImageSrc('https://f.imnyang.xyz/profile/no_ear_no_long_hair.png');
+    } else if (queryParams.has('no_ear')) {
+      setImageSrc('https://f.imnyang.xyz/profile/no_ear.png');
+    } else if (queryParams.has('no_hair')) {
+      setImageSrc('https://f.imnyang.xyz/profile/no_hair.avif');
+    } 
+    
   }, [location.search]);
 
   return (
     <div className='App'>
       <div className='container'>
         <div className='left'>
+          <p style={{color: 'transparent'}}>/?no_hair</p>
+          {/* /?no_ear */}
           <img src={imageSrc} width={256} className='profile' />
           <h1 style={{color: '#241f22', fontSize: 60, margin: 0, fontWeight: '700'}}>
             <Link style={{color: '#241f22', fontSize: 60, margin: 0, fontWeight: '700'}} to={gotoHref}>imnyang</Link>
@@ -30,7 +40,7 @@ function Root() {
             <p style={{textAlign: 'left'}}>
               🖥️ Software Engineer
               <br/>
-              🎨 UI / UX Designer in <a href='https://sqlare.com'>Sqlare</a>
+              🎨 Team. <a href='https://sqlare.com'>Sqlare</a>
               <br/><br/>
               📚 Middle School Student in South Korea
               <br/>
